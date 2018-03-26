@@ -1,0 +1,25 @@
+<html>
+<head>
+ <style>
+ .button{border-radius:5px; margin:8px; cursor:pointer;text-align: center;width:100px;}
+ </style>
+</head>
+<body style="background-color:slateblue;">
+<h1>Click Any Of The Option Below</h1>
+<img src="black.jpeg" id="Changecolor" style="width:100px; border-radius:20px; padding-right:10px;">
+
+<button class="button" onclick="displayImage('black.jpeg');">Black</button>
+<button class="button" onclick="displayImage('blue.jpeg');">Blue</button>
+<button class="button" onclick="displayImage('gold.jpeg');">Gold</button>
+<button class="button" onclick="displayImage('rose-gold.jpeg');">RoseGold</button>
+
+<script type="text/javascript">
+function displayImage(img){
+ document.getElementById("Changecolor").src=img;
+
+}
+</script>
+</body>
+</html>
+
+
