@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ input{cursor: pointer;margin:10px;width: auto;height: 30px; color: blue;border-radius: 4px; background-color:brown;}
+ p{font-size: 18px;font-weight: bold;font-family: arial;}
+ </style>
+</head>
+<body>
+<p>Click on the buttons to view Answers.</p>
+<input type="button" value="View Answer1" onclick="showAnswer1()"/> <br>
+<input type="button" value="View Answer2" onclick="showAnswer2()"/> <br>
+<input type="button" value="View Answer3" onclick="showAnswer3()"/> <br>
+<input type="button" value="View Answer4" onclick="showAnswer4()"/> <br>
+<input type="button" value="View Answer5" onclick="showAnswer5()"/> <br>
+<input type="button" value="View Answer6" onclick="showAnswer6()"/> <br>
+<div id="showDiv">
+<input type="button" value="View Answer7" onclick="showAnswer7()"/> <br>
+</div>
+<script>
+function showAnswer1(){
+
+ var carName;
+ carName="Honda City";
+ alert(carName);
+
+}
+
+function showAnswer2(){
+ var number;
+ number=150;
+ alert(number);
+
+}
+
+function showAnswer3(){
+ var x=5,y=10;
+ x+y;
+ alert(x+y);
+}
+
+function showAnswer4(){
+ var x=5,y=10;
+ var z=x+y;
+ alert(z);
+
+}
+function showAnswer5(){
+ var name={firstName:"John",lastName:"Doe",age:35};
+alert(name.firstName+" "+ name.lastName+" is " + name.age);
+
+}
+
+function showAnswer6(){
+ const DOB =calculateAge(1990);
+ function calculateAge(birthYear)
+ {
+  var currentYear =new Date().getFullYear();
+  return currentYear-birthYear;
+ }
+alert(DOB);
+}
+
+function showAnswer7(){
+ var x =document.getElementById("showDiv").innerHTML;
+ x=5;
+ alert(x);
+}
+
+</script>
+</body>
+</html>
