@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ input{cursor: pointer;margin:10px;width: auto;height: 30px; color: #f10000;;border-radius: 4px; background-color:#f1f1f1;}
+ p{font-size: 18px;font-weight: bold;font-family: arial;}
+ </style>
+</head>
+<body>
+<p>Click on the buttons to view Answers.</p>
+<input type="button" value="View Answer1" onclick="showAnswer1()"/> <br>
+<input type="button" value="View Answer2" onclick="showAnswer2()"/> <br>
+<input type="button" value="View Answer3" onclick="showAnswer3()"/> <br>
+<input type="button" value="View Answer4" onclick="showAnswer4()"/> <br>
+<input type="button" value="View Answer5" onclick="showAnswer5()"/> <br>
+<input type="button" value="View Answer6" onclick="showAnswer6()"/> <br>
+<input type="button" value="View Answer7" onclick="showAnswer7()"/> <br>
+<input type="button" value="View Answer8" onclick="showAnswer8()"/> <br>
+<input type="button" value="View Answer9" onclick="showAnswer9()"/> <br>
+<input type="button" value="View Answer10" onclick="showAnswer10()"/> <br>
+
+<script>
+ function showAnswer1()
+{
+var counter = 0;
+counter++;
+++counter;
+alert("Initial value of counter is 0.For counter++ value of counter will be same(counter=0) as it will first assign the value & then increment it.After this value of counter is 1.For ++counter value of counter will first get increment & then will get assigned to the variable.Now the value of counter is:  " +counter);
+}
+
+function showAnswer2(){
+var n = 2;
+n *= 3 + 5;
+alert("The assignment operator(*=) will multiply a variable,the var 2  get multiply with 8.The value of n is:  " +n );
+}
+
+function showAnswer3()
+{
+var a = 1, b = 1;
+var c = ++a;
+var d = b++;
+alert("The value of a is: " +a+ ".  The value of b is: "+b+ ".  The value of c is: " +c+ " . The value of d is: " +d);
+}
+
+function showAnswer4(){
+var a = 2;
+var x = 1 + (a *= 2);
+alert("The value of a is: " +a+ ". The value of x is:" +x);
+}
+
+function showAnswer5(){
+var a= prompt("Enter Number1");
+var b= prompt(" Enter Number2");
+var c= prompt(" Enter Number3");
+var d= prompt(" Enter Number4");
+var a=2, b=5, c=6, d=3;
+
+if(a>b && a>c && a>d)
+{
+alert("The greatest no is: "+a);
+}
+
+else if(b>a && b>c && b>d)
+
+{
+alert("The greatest no is: "+b);
+}
+
+else if (c>a && c>b && c>d)
+
+{
+alert("The greatest no is: "+c);
+}
+
+else
+{
+alert("The greatest no is: "+d);
+}
+}
+
+function showAnswer6()
+{
+var a= prompt("Enter Number 1");
+var b= prompt("Enter Number 2");
+var c = (a+b<4)?"below":"over";
+alert(c);
+}
+
+function showAnswer7()
+{
+var a = prompt('a?', '');
+switch (a)
+{
+case 0: alert(0); break;
+case 1: alert(1); break;
+case 2: alert('2,3'); break;
+default: alert("number is not valid");
+}
+
+}
+
+function showAnswer8()
+{
+var peep;
+var age = prompt("Enter Your Age");
+
+if(isNaN(age))
+{
+teen = "Input is not a Number";
+}
+else
+{
+peep = (age >= 13 && age <= 19) ? "Yo!You are a Teenager" : "Not a Teenager";
+alert(peep);
+}
+}
+
+function showAnswer9()
+{
+
+var day;
+switch(new Date().getDay())
+{
+case 0 : day = "It's a weekend!!! Sunday";
+break;
+case 1 : day = "Monday";
+break;
+case 2 : day = "Tuesday";
+break;
+case 3 : day = "Wednesday";
+break;
+case 4 : day = "Thursday";
+break;
+case 5 : day = "Friday";
+break;
+case 6 : day = "Yippie!!! Its A Weekend,Saturday";
+break;
+}
+alert("Today  is " +day);
+
+}
+
+
+function showAnswer10()
+{
+var d = new Date();
+var h = d.getHours();
+
+document.write("It's d : ",h,"<br>");
+
+if(h >4 && h <17)
+{
+document.body.style.backgroundColor ="yellow";
+}
+
+else if(h >16 && h <20)
+{
+document.body.style.backgroundColor ="blue";
+}
+
+else if(h >19 && h <5)
+{
+document.body.style.backgroundColor ="black";
+}
+else
+{
+document.body.style.backgroundColor ="white";
+}
+
+
+}
+
+</script>
+</body>
+</html>
