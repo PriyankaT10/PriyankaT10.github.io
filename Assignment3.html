@@ -150,7 +150,30 @@
 
 
     			<p><b>Q10: WAF: To generate fibonacci series upto user entered number eg: if user enters 6.  output: 1 1 2 3 5 8.</b></p> 
-    		<p data-height="265" data-theme-id="0" data-slug-hash="GGOwdR" data-default-tab="js,result" data-user="Priyanka10" data-embed-version="2" data-pen-title="GGOwdR" class="codepen">See the Pen <a href="https://codepen.io/Priyanka10/pen/GGOwdR/">GGOwdR</a> by Priyanka Tondvalkar (<a href="https://codepen.io/Priyanka10">@Priyanka10</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    			<input type="button" value="View Answer10" onclick="checkFibo()"/>
+    		<script>
+ function checkFibo(){
+var limit = prompt("Enter the limit 'n' to generate the fibonacci series:", " ");
+var f1=0;
+var f2=1;
+ 
+document.write("The limit entered to generate the fibonacci series is: ",limit, "<br/>");
+document.write("The fibonacci series : ");
+document.write("",f1," ");
+document.write("",f2," ");
+ 
+var i,f3;
+for(i=2; i<limit; i++)
+{
+ f3=f1+f2;
+ document.write("",f3," ");
+ f1=f2;
+ f2=f3;
+}
+}
+ </script>
+
+
 
     		</span>
     		<p><b>Q11:  create 3 pure functions</b></p>
@@ -184,8 +207,10 @@
     					<span class="QandA">
     					<p><b>Q12: Make a header with navigation bar at 200px from the top of the screen, make the header sticky once you scroll past it.</b></p>
 
-    					<input type="button" value="View Answer12" onclick="myFunction()"/>
-    					<p data-height="265" data-theme-id="0" data-slug-hash="qKVmJp" data-default-tab="html,result" data-user="Priyanka10" data-embed-version="2" data-pen-title="qKVmJp" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/Priyanka10/pen/qKVmJp/">qKVmJp</a> by Priyanka Tondvalkar (<a href="https://codepen.io/Priyanka10">@Priyanka10</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    					<input type="button" value="View Answer12" onclick="headSticky()"/>
+    					<p data-height="265" data-theme-id="0" data-slug-hash="GGOwdR" data-default-tab="js,result" data-user="Priyanka10" data-embed-version="2" data-pen-title="GGOwdR" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/Priyanka10/pen/GGOwdR/">GGOwdR</a> by Priyanka Tondvalkar (<a href="https://codepen.io/Priyanka10">@Priyanka10</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+
     					</span>
     					<span class="QandA">
 
