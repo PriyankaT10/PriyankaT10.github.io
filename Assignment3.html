@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	body{position: relative;background:#fff;font-size:12px;font-family: arial;}
+	.container{margin: 50px auto; text-align: center;border-style: solid;border-color: #fff;}
+	p{font-size: 16px;line-height: 21px;color:#fff;font-family: arial, sans-serif;margin: 30px 0;}
+	input{cursor: pointer;margin:10px;width: auto;height: 30px;border-radius: 20px ;border: none;}
+	input:hover {background-color: #00ced1;}
+</style>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<script>
+	function myFunction(el) {
+		var x = el.nextElementSibling;
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
+	}
+</script>
+</head>
+<body>
+	<body style="background-color:#000;"><body>
+		<div class="container">
+			<span class="QandA">
+
+				<p><b>Q1:What is the difference between following 2 functions if any? </b></p>
+				<input type="button" value="View Answer01" onclick="myFunction(this)"/>
+				<div id="myDiv">
+					<p>No difference,The return value will be same.</p>
+				</div>
+			</span>
+			<span class="QandA">
+				<p><b>Q2 :Rewrite above function using ternary operator</b></p>
+				<input type="button" value="View Answer02" onclick="askAge()"/>
+				<div id="myDiv">
+					<script>
+						function askAge(){
+							var age = prompt("Enter the age");
+							var a= age > 18 ? alert("You are not teenager") : alert("You are teenager") 
+							alert(a);
+						}
+					</script>
+				</div>
+			</span>
+			<span class="QandA">
+				<p><b>Q3: WAF to find min value from 2 numbers using ternary operators</b><p>
+					<input type="button" value="View Answer03" onclick="askNumber()"/>
+
+					<div id="myDiv">
+
+						<script>
+							function askNumber(){
+								var val1 = prompt("Enter the First Number");
+								var val2 = prompt("Enter the Second Number");
+								var n=(val1 < val2) ? alert(val1 + " is smaller") : alert(val2 + " is smaller") 
+								alert(n);
+							}
+						</script>
+						</di
+					</span>
+					<span class="QandA">
+						<p><b>Q4 :WAF to find prime numbers from 1-100</b><p>
+							<input type="button" value="View Answer04" onclick="checkIsPrime()"/>
+							<div id="checkConsole" style="color: #fff;">
+							</div>
+								<script>
+									function checkIsPrime(){
+										function prime(num) {
+											if( (num % 2) == 0 ){
+												console.log( num + " is Prime Number" );
+											}else{
+												console.log( num + " is Not Prime Number" );
+											}
+										}
+
+										for( var i = 0; i <=100; i++ ){
+											prime(i);
+										}
+										var print = document.getElementById('checkConsole').innerHTML = "Check Console For Result";
+									}
+
+							   </script>
+</span>
+<span class="QandA">
+	<p><b>Q5 : Implement IIFE</b><p>
+		<input type="button" value="View Answer05" onclick="checkIife()"/>
+		<script>
+			function checkIife(){
+			var text = "Hello World";
+          (function (innerFun) {
+             alert(innerFun);
+          })(text);
+			}
+		</script>
+	</span>
+	<span class="QandA">
+		<p><b>Q6 : Demonstrate difference between function declaration and expression</b></p>
+		<input type="button" value="View Answer06" onclick="myFunction()"/>
+		<!-- <script>
+			function myFunction(){
+			var num1=10; num2=20
+			var result= addConstructor(num1,num2);
+	        function addConstructor(parameters1,parameters2){  //function declaration
+	        	return parameters1+parameters2;
+	        }
+	        }
+        </script> -->
+   
+    <!-- 	<script>
+    		function myFunction(){
+    		var num1=10; num2=20
+    		var add = function(parameters1,parameters2)      
+    		{
+    			return parameters1+parameters2;;
+    		}
+    		//var result= add(num1,num2);
+
+
+    	</script> -->
+    </span>
+    <span class="QandA">
+
+    	<p><b>Q7: WAF to multi 2/multiple numbers. (use function parameters/arguments)</b><p>
+    		<input type="button" value="View Answer07" onclick="multiplyNum()"/>
+    		<script>
+    			function multiplyNum(){
+    			function multiNum(x,y){
+    				var result;
+    				result = x * y;
+    				alert(result);
+    			}
+    			multiNum(10, 20);
+    		}
+    		</script>
+    	</span>
+    	<span class="QandA">
+    		<p><b>Q8: Implement previous assignments (Take any 5 examples.) using functions e.g.:get todays day, change bg, check age, etc. try to use pure functions.</b></p>
+    		<input type="button" value="View Answer08" onclick="myFunction()"/>
+    	</span>
+    	<span class="QandA">
+    		<p><b>Q9: WAF: To check if palindrome</b><p>
+    			<input type="button" value="View Answer09" onclick="myFunction()"/>
+    <p data-height="265" data-theme-id="0" data-slug-hash="GGOwdR" data-default-tab="js,result" data-user="Priyanka10" data-embed-version="2" data-pen-title="GGOwdR" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/Priyanka10/pen/GGOwdR/">GGOwdR</a> by Priyanka Tondvalkar (<a href="https://codepen.io/Priyanka10">@Priyanka10</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+    		</span>
+    		    		<span class="QandA">
+
+
+    			<p><b>Q10: WAF: To generate fibonacci series upto user entered number eg: if user enters 6.  output: 1 1 2 3 5 8.</b></p> 
+    		<p data-height="265" data-theme-id="0" data-slug-hash="GGOwdR" data-default-tab="js,result" data-user="Priyanka10" data-embed-version="2" data-pen-title="GGOwdR" class="codepen">See the Pen <a href="https://codepen.io/Priyanka10/pen/GGOwdR/">GGOwdR</a> by Priyanka Tondvalkar (<a href="https://codepen.io/Priyanka10">@Priyanka10</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+    		</span>
+    		<p><b>Q11:  create 3 pure functions</b></p>
+    		<input type="button" value="View Answer11" onclick="checkArray()"/>
+    		<span class="QandA">
+
+    				<p>TO get the Minimum value from the given array.</p>
+
+    				<script>
+    					function checkArray(){
+    					function minArray(){
+    						var arr=[25,45,78,34,90]; 
+    						var minValue = arr[0];
+
+    						for (var i = 0; i < arr.length; i++) {
+    							if(arr[i] < minValue){ s
+    								minValue = arr[i];
+    							}
+    						}
+    						var show = "The minimum value from [" + [arr] + "] is "+ minValue; 
+	    					alert(show);
+    					}
+    				}
+    				</script>
+    					</div>
+    					</div>
+    					</span>
+
+
+
+    					<span class="QandA">
+    					<p><b>Q12: Make a header with navigation bar at 200px from the top of the screen, make the header sticky once you scroll past it.</b></p>
+
+    					<input type="button" value="View Answer12" onclick="myFunction()"/>
+    					<p data-height="265" data-theme-id="0" data-slug-hash="qKVmJp" data-default-tab="html,result" data-user="Priyanka10" data-embed-version="2" data-pen-title="qKVmJp" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/Priyanka10/pen/qKVmJp/">qKVmJp</a> by Priyanka Tondvalkar (<a href="https://codepen.io/Priyanka10">@Priyanka10</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    					</span>
+    					<span class="QandA">
+
+    					<p><b>Q13: Make 3 level navigation menu, using javascript. use hover/click to show child level menus.</b></p>
+    					<input type="button" value="View Answer13" onclick="myFunction()"/>
+
+    					</span>
+    					<span class="QandA">
+    					<p><b>Q14 :Implement tab switch functionality / name of tab and content should come from an object.</b></p>
+    					<input type="button" value="View Answer14" onclick="myFunction()"/>
+
+    					<p data-height="265" data-theme-id="0" data-slug-hash="qKVmJp" data-default-tab="js,result" data-user="Priyanka10" data-embed-version="2" data-pen-title="qKVmJp" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/Priyanka10/pen/qKVmJp/">qKVmJp</a> by Priyanka Tondvalkar (<a href="https://codepen.io/Priyanka10">@Priyanka10</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    					</span>
+    					</body>
+    					</html>
