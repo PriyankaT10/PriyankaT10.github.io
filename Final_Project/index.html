@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>heyyaa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="particle.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<div id="particles-js"></div>
+<div class="count-particles">
+ <span class="js-count-particles">--</span> particles </div> 
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+    <script>
+     $.ajax({
+            dataType: "json",
+            url: "http://www.omdbapi.com/?i=tt3896198&apikey=bc667289",
+            success: function(response) {
+                console.log(response);
+                displayMovieList(response);
+            },
+        });
+            function displayMovieList(data){
+            for (movie in data.movies) {
+                console.log(data);
+                console.log(data.movies[movie].directors[0].Name);
+                var movieName = $("#movies-list").append('\
+                    <div class="panel">\
+                        <h3>Name: ' + data.movies[movie].title + '</h3>\
+                        <p>Year : '  + data.movies[movie].year +  '</p>\
+                        <p>Director Name :'  + data.movies[movie].directors[0].Name +  '</p>\
+                    </div>');
+            }
+
+        }
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="particle.js"></script>
+
+</body>
+</html>
