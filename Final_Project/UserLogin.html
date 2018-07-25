@@ -7,7 +7,7 @@
 
 <button id="login-btn" onclick="userLogin()">Login</button>
 
-<button id="logut-btn" onclick="userLogout">Logout</button>
+<button id="logout-btn" onclick="userLogout()">Logout</button>
 
 
 
@@ -16,7 +16,7 @@
 <script>
 
   var loginBtn = document.getElementById('login-btn');
-  var logoutBtn = document.getElementById('logut-btn');
+  var logoutBtn = document.getElementById('logout-btn');
 
   var config = {
     apiKey: "AIzaSyBC2zvuRSI1g_neggPiPoYS-aOBi1z4ENQ",
@@ -32,10 +32,12 @@
 
   logoutBtn.style.display = "none";
 
+   var provider = new firebase.auth.GoogleAuthProvider();
+  provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+
 // button click login
 function userLogin(){
-  var provider = new firebase.auth.GoogleAuthProvider();
-  provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+ 
   firebase.auth().signInWithPopup(provider).then(function(result) {
     // This gives you a Google Access Token. You can use it to access the Google API.
     var token = result.credential.accessToken;
