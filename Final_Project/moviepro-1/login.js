@@ -1,13 +1,12 @@
 var loginBtn = document.getElementById('login-btn');
-// var logoutBtn = document.getElementById('logout-btn');
-
+var logoutBtn = document.getElementById('logout-btn');
 loginBtn.onclick = function(){
     userLogin();
 }
 
-// logoutBtn.onclick = function () {
-//     userLogout();
-// }
+logoutBtn.onclick = function () {
+    userLogout();
+}
 
 var config = {
     apiKey: "AIzaSyBC2zvuRSI1g_neggPiPoYS-aOBi1z4ENQ",
@@ -19,7 +18,7 @@ var config = {
 };
 
 firebase.initializeApp(config);
-// logoutBtn.style.display = "none";
+logoutBtn.style.display = "none";
 var provider = new firebase.auth.GoogleAuthProvider();
 provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
 
@@ -34,7 +33,7 @@ function userLogin(){
 
         if(user){
             console.log("Do something after login");
-            // logoutBtn.style.display = "block";
+            logoutBtn.style.display = "block";
             loginBtn.style.display = "none";
         }
         // ...
@@ -62,7 +61,7 @@ function userLogout(){
 
         console.log("Show login form");
 
-        // logoutBtn.style.display = "none";
+        logoutBtn.style.display = "none";
         loginBtn.style.display = "block";
 
     }).catch(function(error) {
