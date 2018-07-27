@@ -17,7 +17,7 @@ function getMovies(searchText) {
 
         output += `
           
-                 <div class="col-md-3 col-sm-4 col-xs-12">
+                 <div class="col-md-3 col-sm-4 col-xs-6 mobwidth">
                     <div class="well text-center">
                     <div class="img-wrap"><img src="${movie.Poster}"></div>
                     <h5>${movie.Title}</h5>
