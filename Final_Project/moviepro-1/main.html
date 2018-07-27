@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie DB</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.min.js"></script>
+    <script src="common.js"></script>
+</head>
+<body>
+	<header class="clearfix">
+        <div class="logo-wrapper pull-left">
+		    <img class="logo" src="img/logo1.png">
+        </div>
+        <div class="user-wrapper pull-right">
+            <img class="user" src="img/userimg.png" id="login-btn">
+        </div>
+	</header>
+ <div class="container">
+     <div class="jumbotron">
+         <h3 class="text-center">Search For Any Movie</h3>
+             <form id="searchForm">
+                 <input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+             </form>
+             <h5>Press Enter Key Twice to Submit</h5>     
+     </div>
+ </div>
+
+ <div class="container">
+     <div id="movies" class="row">
+     </div>
+    <div id="movie" class="well"></div>
+ </div>
+ <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+ <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+ <script src="login.js"></script>
+</body>
+</html>
