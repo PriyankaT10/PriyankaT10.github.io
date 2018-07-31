@@ -23,9 +23,9 @@ header{display:block;height: 95px;line-height: 70px;background: #58cbc5;padding:
 .filmblock .addfave{width: 35px;height: 35px;position: absolute;left: 5px;top: 5px;}
 .filmblock .addfave img{width: 35px;height: 35px;background-size: 100%;position: absolute;left: 0;top: 0;}
 h2{font-size: 25px;margin: 10px 0;color: #333;text-align: center;font-weight: 600;text-transform: uppercase;} 
-button{position: absolute; width: 150px; height: 50px; top: 50%; left: 50%; margin-left: -75px; margin-top: -25px;cursor:pointer; background: #009688;color: #fff;box-shadow: 0 6px #024741;-webkit-transition: none;-moz-transition: none;transition: none;border: 0; outline: none;}
-button a{color: #fff;text-decoration: none;text-transform: uppercase;letter-spacing: 1px;font-weight: 700;font-size: 14px;width: 150px;height: 50px;line-height: 50px;}
-button:hover{box-shadow: 0 4px #024741;margin-top: -23px;}
+.btn{position: absolute; width: 150px; height: 50px; top: 50%; left: 50%; margin-left: -75px; margin-top: -25px;cursor:pointer; background: #009688;color: #fff;box-shadow: 0 6px #024741;-webkit-transition: none;-moz-transition: none;transition: none;border: 0; outline: none;}
+.btn a{color: #fff;text-transform: uppercase;letter-spacing: 1px;font-weight: 700;font-size: 16px;width: 150px;height: 50px;line-height: 31px;}
+.btn:hover{box-shadow: 0 4px #024741;margin-top: -23px;}
 .btn-info{background-color: #58cbc5;border-color: #347774;}
 .btn-info:hover{background-color: #3a8b87;border-color: #1e4644;}
 .btn-success{background-color: #58cbc5;border-color: #347774;}
